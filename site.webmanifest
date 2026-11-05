@@ -1,0 +1,19 @@
+{
+  "name": "PatiYuva Petshop",
+  "short_name": "PatiYuva",
+  "description": "Her pati için iyi yaşam.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fbf8f1",
+  "theme_color": "#f26b3a",
+  "lang": "tr",
+  "icons": [
+    {
+      "src": "/patiyuva-logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
