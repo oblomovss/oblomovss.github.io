@@ -59,13 +59,57 @@
         <a href="/iletisim" data-route="contact">İletişim</a>
       </div>
     </header>
-    <nav class="catalog-bar" aria-label="Katalog kategorileri">
+    <nav class="catalog-bar" aria-label="Ana kategori navigasyonu">
       <div class="catalog-bar-inner">
         <span class="catalog-label">Katalog</span>
-        <a href="/urunler?kategori=Kedi">Kedi</a>
-        <a href="/urunler?kategori=Köpek">Köpek</a>
-        <a href="/urunler?kategori=Kuş">Kuş</a>
-        <a href="/urunler?kategori=Aksesuar">Aksesuar</a>
+        <details class="catalog-menu">
+          <summary>Kedi <span>⌄</span></summary>
+          <div class="catalog-menu-panel">
+            <strong>Kedi ürünleri</strong>
+            <a href="/urunler?kategori=Kedi">Tüm kedi ürünleri</a>
+            <a href="/urunler?kategori=Kedi">Kedi mamaları</a>
+            <a href="/urunler?kategori=Kedi">Kedi yatakları</a>
+            <a href="/urunler?kategori=Kedi">Kedi oyuncakları</a>
+            <a href="/urunler?kategori=Kedi">Kum ve bakım</a>
+          </div>
+        </details>
+        <details class="catalog-menu">
+          <summary>Köpek <span>⌄</span></summary>
+          <div class="catalog-menu-panel">
+            <strong>Köpek ürünleri</strong>
+            <a href="/urunler?kategori=Köpek">Tüm köpek ürünleri</a>
+            <a href="/urunler?kategori=Köpek">Köpek mamaları</a>
+            <a href="/urunler?kategori=Köpek">Yatak ve konfor</a>
+            <a href="/urunler?kategori=Köpek">Tasma ve gezdirme</a>
+            <a href="/urunler?kategori=Köpek">Oyuncaklar</a>
+          </div>
+        </details>
+        <details class="catalog-menu">
+          <summary>Kuş <span>⌄</span></summary>
+          <div class="catalog-menu-panel">
+            <strong>Kuş ürünleri</strong>
+            <a href="/urunler?kategori=Kuş">Kuş yemleri</a>
+            <a href="/urunler?kategori=Kuş">Kafes ekipmanları</a>
+            <a href="/urunler?kategori=Kuş">Oyuncak ve tünekler</a>
+            <a href="/urunler?kategori=Kuş">Bakım ve sağlık</a>
+          </div>
+        </details>
+        <details class="catalog-menu">
+          <summary>Diğer Hayvanlar <span>⌄</span></summary>
+          <div class="catalog-menu-panel">
+            <strong>Diğer dostlar</strong>
+            <a href="/urunler?kategori=Aksesuar">Tavşan</a>
+            <a href="/urunler?kategori=Aksesuar">Hamster</a>
+            <a href="/urunler?kategori=Aksesuar">Guinea pig</a>
+            <a href="/urunler?kategori=Aksesuar">Balık ve akvaryum</a>
+            <a href="/urunler?kategori=Aksesuar">Genel aksesuarlar</a>
+          </div>
+        </details>
+        <a href="#yuva-arayanlar">Yuva Arayanlar</a>
+        <a href="/urunler?kategori=Aksesuar">Markalar</a>
+        <a href="/urunler">Çok Satanlar</a>
+        <a href="/urunler">Kampanyalar</a>
+        <a href="#rehber">Blog / Rehber</a>
         <a class="catalog-advice" href="https://wa.me/905551234567?text=Merhaba%20PatiYuva%2C%20katalog%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noopener noreferrer">WhatsApp’tan danış ↗</a>
       </div>
     </nav>
@@ -101,6 +145,15 @@
           <a class="category-card cat-cat" href="/urunler?kategori=Kedi" data-category="Kedi" data-route="products"><span class="category-number">01</span><span class="category-icon">◒</span><strong>Kedi</strong><small>Konforlu köşeler, oyun ve bakım</small><span class="category-arrow">↗</span></a>
           <a class="category-card cat-dog" href="/urunler?kategori=Köpek" data-category="Köpek" data-route="products"><span class="category-number">02</span><span class="category-icon">◓</span><strong>Köpek</strong><small>Lezzetli, dayanıklı, neşeli</small><span class="category-arrow">↗</span></a>
           <a class="category-card cat-bird" href="/urunler?kategori=Kuş" data-category="Kuş" data-route="products"><span class="category-number">03</span><span class="category-icon">⌁</span><strong>Kuş & Aksesuar</strong><small>Renkli hayatlara küçük dokunuşlar</small><span class="category-arrow">↗</span></a>
+        </div>
+      </section>
+
+      <section class="homing-section page-section" id="yuva-arayanlar" aria-labelledby="homing-title">
+        <div class="section-heading split-heading"><div><p class="eyebrow"><span class="eyebrow-line"></span> Yuva arayanlar</p><h2 id="homing-title">Bir dost, <em>bir yuva</em> arıyor.</h2></div><p class="section-intro">PatiYuva’da yuva arayan canlar için güvenli ve samimi bir buluşma alanı oluşturuyoruz. Sahiplendirme bilgisi için bize WhatsApp’tan ulaşın.</p></div>
+        <div class="homing-grid">
+          <a class="homing-card homing-cat" href="https://wa.me/905551234567?text=Merhaba%20PatiYuva%2C%20yuva%20arayan%20bir%20kedi%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noreferrer"><span>🐱</span><strong>Kedi yuvası</strong><small>Bir kedinin hikâyesine ortak olun ↗</small></a>
+          <a class="homing-card homing-dog" href="https://wa.me/905551234567?text=Merhaba%20PatiYuva%2C%20yuva%20arayan%20bir%20k%C3%B6pek%20hakk%C4%B1nda%20bilgi%20almak%20istiyorum." target="_blank" rel="noreferrer"><span>🐶</span><strong>Köpek yuvası</strong><small>Güvenli sahiplendirme için yazın ↗</small></a>
+          <a class="homing-card homing-other" href="https://wa.me/905551234567?text=Merhaba%20PatiYuva%2C%20di%C4%9Fer%20hayvanlar%20i%C3%A7in%20yuva%20arama%20bilgisi%20almak%20istiyorum." target="_blank" rel="noreferrer"><span>🦜</span><strong>Diğer hayvanlar</strong><small>Kuş, kemirgen ve daha fazlası ↗</small></a>
         </div>
       </section>
 
