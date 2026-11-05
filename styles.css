@@ -61,3 +61,21 @@
 .nav-instagram{color:var(--green)!important;font-weight:700!important}
 .nav-priority:hover,.nav-instagram:hover{opacity:.72}
 @media(max-width:650px){.mobile-menu .nav-priority{padding-top:5px;border-top:1px solid var(--line)}}
+
+/* Campaign and community cards */
+.promo-section{padding:0 0 110px;background:var(--paper)}
+.promo-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.promo-card{min-height:300px;border-radius:28px;padding:30px 32px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;position:relative;overflow:hidden}
+.promo-card:before{content:"";position:absolute;width:210px;height:210px;border-radius:50%;right:-58px;top:-64px;background:rgba(255,255,255,.28)}
+.promo-card:after{content:"✦";position:absolute;right:34px;top:28px;font-size:24px;color:rgba(39,59,46,.72)}
+.promo-card>*{position:relative;z-index:1}
+.promo-kicker{font-size:11px;letter-spacing:.14em;text-transform:uppercase;font-weight:800;margin-bottom:auto;color:rgba(39,59,46,.7)}
+.promo-card h2{max-width:420px;margin:26px 0 10px;font:600 clamp(27px,3vw,40px)/.98 'Space Grotesk';letter-spacing:-.06em;color:var(--ink)}
+.promo-card p{max-width:500px;margin:0 0 22px;color:rgba(39,59,46,.75);font-size:14px;line-height:1.65}
+.promo-link{font-size:13px;font-weight:800;color:var(--ink);border-bottom:1px solid currentColor;padding-bottom:4px}
+.promo-link span{margin-left:8px}
+.promo-campaign{background:#f7cf62}.promo-club{background:#d9e8df}
+.nav-campaign{color:var(--orange-deep)!important;font-weight:800!important}.nav-club{color:var(--green)!important;font-weight:800!important}
+.nav-campaign:hover,.nav-club:hover{opacity:.72}
+@media(max-width:800px){.promo-grid{grid-template-columns:1fr}.promo-section{padding-bottom:78px}}
+@media(max-width:650px){.mobile-menu .nav-campaign,.mobile-menu .nav-club{padding-top:5px;border-top:1px solid var(--line)}}
