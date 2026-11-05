@@ -79,3 +79,5 @@
 .nav-campaign:hover,.nav-club:hover{opacity:.72}
 @media(max-width:800px){.promo-grid{grid-template-columns:1fr}.promo-section{padding-bottom:78px}}
 @media(max-width:650px){.mobile-menu .nav-campaign,.mobile-menu .nav-club{padding-top:5px;border-top:1px solid var(--line)}}
+.promo-link{color:var(--orange-deep);border-bottom-color:var(--orange-deep)}
+.promo-link:hover{color:var(--ink);border-bottom-color:var(--ink)}
