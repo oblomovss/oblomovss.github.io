@@ -55,3 +55,9 @@
 .art-bed.aquarium-set{background:#5c9da3;border-color:#397b83}
 @media(max-width:900px){.category-layout{grid-template-columns:repeat(3,1fr)}.category-card{min-height:210px}}
 @media(max-width:650px){.category-layout{grid-template-columns:1fr 1fr}.category-card{min-height:180px;padding:17px 14px}.category-card strong{font-size:18px}.catalog-direct{font-size:10px!important}}
+
+/* Nur Pati Petshop priority actions */
+.nav-priority{color:var(--orange-deep)!important;font-weight:800!important}
+.nav-instagram{color:var(--green)!important;font-weight:700!important}
+.nav-priority:hover,.nav-instagram:hover{opacity:.72}
+@media(max-width:650px){.mobile-menu .nav-priority{padding-top:5px;border-top:1px solid var(--line)}}

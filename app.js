@@ -18,8 +18,8 @@ const filterButtons = [...document.querySelectorAll('.filter-chip')];
 
 function whatsappUrl(productName = '') {
   const message = productName
-    ? `Merhaba PatiYuva, ${productName} hakkında bilgi almak istiyorum.`
-    : 'Merhaba PatiYuva, dostum için öneri almak istiyorum.';
+    ? `Merhaba Nur Pati, ${productName} hakkında bilgi almak istiyorum.`
+    : 'Merhaba Nur Pati, dostum için öneri almak istiyorum.';
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
 
@@ -63,10 +63,10 @@ const routeLinks = [...document.querySelectorAll('[data-route]')];
 const mobileMenu = document.querySelector('.mobile-menu');
 const menuToggle = document.querySelector('.menu-toggle');
 const routeMeta = {
-  home: { title: 'PatiYuva Petshop — Her pati için iyi yaşam', description: 'PatiYuva Petshop — dostlarınız için özenle seçilmiş ürünler ve WhatsApp\'tan hızlı danışmanlık.' },
-  products: { title: 'PatiYuva — Ürün kataloğu', description: 'Kedi, köpek, kuş ve aksesuar ürünlerini keşfedin; ürün adıyla WhatsApp\'tan bilgi alın.' },
-  about: { title: 'PatiYuva — Hakkımızda', description: 'PatiYuva\'nın mahalle sıcaklığındaki petshop hikâyesini keşfedin.' },
-  contact: { title: 'PatiYuva — İletişim', description: 'PatiYuva\'ya adres, WhatsApp ve iletişim formu üzerinden ulaşın.' },
+  home: { title: 'Nur Pati Petshop — Her pati için iyi yaşam', description: 'Nur Pati Petshop — dostlarınız için özenle seçilmiş ürünler ve WhatsApp\'tan hızlı danışmanlık.' },
+  products: { title: 'Nur Pati — Ürün kataloğu', description: 'Kedi, köpek, kuş ve aksesuar ürünlerini keşfedin; ürün adıyla WhatsApp\'tan bilgi alın.' },
+  about: { title: 'Nur Pati — Hakkımızda', description: 'Nur Pati\'nın mahalle sıcaklığındaki petshop hikâyesini keşfedin.' },
+  contact: { title: 'Nur Pati — İletişim', description: 'Nur Pati\'ya adres, WhatsApp ve iletişim formu üzerinden ulaşın.' },
 };
 
 function updateMeta(route) {
@@ -123,7 +123,7 @@ const success = document.querySelector('#form-success');
 form.addEventListener('submit', (event) => {
   event.preventDefault();
   const data = Object.fromEntries(new FormData(form).entries());
-  const message = `Merhaba PatiYuva, ben ${data.name}. İletişim bilgilerim: ${data.contact}. Mesajım: ${data.message}`;
+  const message = `Merhaba Nur Pati, ben ${data.name}. İletişim bilgilerim: ${data.contact}. Mesajım: ${data.message}`;
   const chatUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
   const chatWindow = window.open(chatUrl, '_blank', 'noopener,noreferrer');
   if (!chatWindow) window.location.href = chatUrl;
