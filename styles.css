@@ -41,3 +41,17 @@
 .homing-cat{background:#f5c85c;color:#273b2e}.homing-dog{background:#d6e8d2;color:#273b2e}.homing-other{background:#d9e8e7;color:#273b2e}
 @media(max-width:900px){.catalog-bar-inner{width:calc(100% - 36px)}.homing-grid{grid-template-columns:1fr 1fr}.homing-card:last-child{grid-column:1 / -1}}
 @media(max-width:650px){.catalog-bar-inner{padding:9px 0;gap:12px 17px;align-items:center}.catalog-label{width:100%}.catalog-menu summary,.catalog-bar a{font-size:10px}.catalog-menu-panel{position:fixed;top:145px;left:18px;width:calc(100vw - 36px);max-width:310px}.homing-section{padding:76px 0 84px}.homing-section,.homing-section .section-heading{width:calc(100% - 36px);margin-left:auto;margin-right:auto}.homing-grid{grid-template-columns:1fr}.homing-card:last-child{grid-column:auto}.homing-card{min-height:160px}}
+
+/* Explicit homepage categories: cat, dog, bird, rodent, aquarium */
+.catalog-direct{font-weight:700!important;color:var(--muted)!important}
+.catalog-direct:hover{color:var(--orange-deep)!important}
+.category-layout{grid-template-columns:repeat(5,1fr);gap:12px}
+.category-card{min-height:245px;padding:20px 17px}
+.category-card strong{font-size:20px}
+.cat-rodent{background:#eee4d1;color:#48543e}
+.cat-aquarium{background:#d9e8e7;color:#28565b}
+.cat-rodent .category-icon,.cat-aquarium .category-icon{background:rgba(255,255,255,.48)}
+.art-pack.rodent-food{background:linear-gradient(140deg,#b68755,#735130)}
+.art-bed.aquarium-set{background:#5c9da3;border-color:#397b83}
+@media(max-width:900px){.category-layout{grid-template-columns:repeat(3,1fr)}.category-card{min-height:210px}}
+@media(max-width:650px){.category-layout{grid-template-columns:1fr 1fr}.category-card{min-height:180px;padding:17px 14px}.category-card strong{font-size:18px}.catalog-direct{font-size:10px!important}}

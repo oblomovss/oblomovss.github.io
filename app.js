@@ -9,6 +9,8 @@ const products = [
   { name: 'Şehir Gezgini', category: 'Köpek', type: 'Aksesuar', description: 'Güvenli yürüyüşler için ayarlanabilir günlük tasma.', art: 'leash', artClass: '' },
   { name: 'Renkli Kanatlar', category: 'Kuş', type: 'Aksesuar', description: 'Kafes içi neşeyi artıran doğal ahşap oyuncak.', art: 'scratch', artClass: 'bird-toy' },
   { name: 'Minik Pati Tasması', category: 'Aksesuar', type: 'Aksesuar', description: 'Hafif, yumuşak ve minik dostlara uygun.', art: 'leash', artClass: 'tiny-leash' },
+  { name: 'Minik Dostlar Yemi', category: 'Kemirgen', type: 'Mama', description: 'Hamster ve tavşanlar için dengeli günlük karışım.', art: 'pack', artClass: 'rodent-food' },
+  { name: 'Akvaryum Başlangıç Seti', category: 'Akvaryum', type: 'Aksesuar', description: 'Su altı dünyası için pratik bakım ve yaşam seti.', art: 'bed', artClass: 'aquarium-set' },
 ];
 
 const productGrid = document.querySelector('#product-grid');
@@ -53,7 +55,7 @@ function renderProducts(filter = 'Tümü') {
 
 filterButtons.forEach((button) => button.addEventListener('click', () => renderProducts(button.dataset.filter)));
 const requestedCategory = new URLSearchParams(window.location.search).get('kategori');
-const initialFilter = ['Kedi', 'Köpek', 'Kuş', 'Aksesuar'].includes(requestedCategory) ? requestedCategory : 'Tümü';
+const initialFilter = ['Kedi', 'Köpek', 'Kuş', 'Kemirgen', 'Akvaryum', 'Aksesuar'].includes(requestedCategory) ? requestedCategory : 'Tümü';
 renderProducts(initialFilter);
 
 const routeTargets = { home: 'home', products: 'urunler', about: 'hakkimizda', contact: 'iletisim' };
@@ -130,7 +132,7 @@ form.addEventListener('submit', (event) => {
 });
 
 const initialCategory = new URLSearchParams(window.location.search).get('kategori');
-if (initialCategory && ['Kedi', 'Köpek', 'Kuş', 'Aksesuar'].includes(initialCategory)) renderProducts(initialCategory);
+if (initialCategory && ['Kedi', 'Köpek', 'Kuş', 'Kemirgen', 'Akvaryum', 'Aksesuar'].includes(initialCategory)) renderProducts(initialCategory);
 
 const initialPath = window.location.pathname;
 if (initialPath !== '/') {
